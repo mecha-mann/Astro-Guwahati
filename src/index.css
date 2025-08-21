@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root {
+  --primary-color: hsl(23, 100%, 65%);
+  --primary-dark: hsl(23, 100%, 25%);
+  --dark: hsl(0, 0%, 7%);
+  --bg-dark: hsl(18, 25%, 92%);
+  --bg-light: hsl(20, 20%, 97%);
+  --white: #fff;
+  --black: #000;
+  --font-color: hsl(149, 26%, 16%);
+
+  font-size: 62.5%;
+  /* 1rem = 10px */
+
+  /* Font Sizes */
+  --fs-xm: clamp(1.02rem, 0.05vi + 1rem, 1.07rem);
+  --fs-sm: clamp(1.28rem, 0.13vi + 1.23rem, 1.38rem);
+  --fs-base: clamp(1.6rem, 0.25vi + 1.5rem, 1.8rem);
+  --fs-h6: clamp(2rem, 0.42vi + 1.83rem, 2.34rem);
+  --fs-h5: clamp(2.5rem, 0.67vi + 2.23rem, 3.04rem);
+  --fs-h4: clamp(3.13rem, 1.03vi + 2.71rem, 3.95rem);
+  --fs-d-sm: clamp(3.91rem, 1.54vi + 3.29rem, 5.14rem);
+  --fs-d-md: clamp(4.88rem, 2.24vi + 3.99rem, 6.68rem);
+  --fs-d-lg: clamp(6.1rem, 3.21vi + 4.82rem, 8.69rem);
+}
+
+/*--------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+p {
+  font-family: "Instrument Sans", sans-serif;
+  color: var(--font-color);
+  line-height: 1.5em;
+  font-size: var(--fs-base);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Instrument Serif", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  line-height: 1em;
+}
+
+h5,
+h6 {
+  font-family: "Instrument Serif", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: var(--fs-d-lg);
+}
+
+h2 {
+  font-size: var(--fs-d-md);
+}
+
+h3 {
+  font-size: var(--fs-d-sm);
+}
+
+/*---------------components------------------*/
+
+.container {
+  width: 100%;
+  max-width: 1204px;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+button {
+  font-size: var(--fs-base);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 1.6rem;
+  transition: transform 200ms ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-dark {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+li {
+  list-style: none;
+}
+
+.label {
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  font-weight: 600;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.text-highlight {
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+/*---------------components Ends------------------*/
